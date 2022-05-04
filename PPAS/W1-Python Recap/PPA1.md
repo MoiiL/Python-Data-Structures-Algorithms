@@ -4,12 +4,14 @@
 ## Code:
 <p>
  <pre>
+import math
 def prime(n): 
-   ls = []    
-   for i in range(1,n+1):  
+   temp, i = True, 0   
+   while temp and i<math.sqrt(n):  
        if (n%i) == 0:   
-           ls.append(i)    
-   return(ls == [1,n])   
+           temp = False
+       i++
+   return(temp)   
 </p>
 <p>
 def Twin_Primes(n,m):  
