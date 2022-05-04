@@ -2,17 +2,17 @@
 ## Write a function Twin_Primes(n, m) where n and m are positive integers and n < m , that returns all unique twin primes between m and n (both inclusive). The function returns a list of tuples and each tuple (a,b) represents one unique twin prime where n <= a < b <= m.
 
 ## Code:
-<p>
- <pre>
+
+<pre>
 import math
 def prime(n): 
    temp, i = True, 0   
    while temp and i<math.sqrt(n):  
-       if (n%i) == 0:   
-           temp = False
-       i++
+     if (n%i) == 0:   
+        temp = False
+     i++
    return(temp)   
-</p>
+<br>
 <p>
 def Twin_Primes(n,m):  
     ls = []       
