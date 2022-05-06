@@ -1,5 +1,5 @@
-## Python-Data-Structures-Algorithms
- # Repo for weekly assignments
+# Data Structures and Algorithms using Python
+ ## Repo for weekly assignments
  <ul>
 <li>WEEK 1	Python Refresher
 <li>WEEK 2	Complexity, Notations, Sorting and Searching Algorithms
