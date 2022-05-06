@@ -1,4 +1,4 @@
-## Write a function Find_Min_Difference(L,P) that accepts a list L of integers and P (positive numbers) where the size of L is greater than P. Pick P different elements from list L where the difference between the maximum and mininum values in selected elements is minimum compared to other differences in possible subset of p elements. The fucntion returns the minimum differencd value.
+## Write a function Find_Min_Difference(L,P) that accepts a list L of integers and P (positive numbers) where the size of L is greater than P. Pick P different elements from list L where the difference between the maximum and mininum values in selected elements is minimum compared to other differences in possible subset of p elements. The function returns the minimum difference value.
 
 ## Code
 
