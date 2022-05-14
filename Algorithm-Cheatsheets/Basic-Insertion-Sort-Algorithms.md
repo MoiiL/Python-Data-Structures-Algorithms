@@ -24,14 +24,14 @@ def InsertionSort(ls):
 #### Code: Inserting element in a sorted list using recursion
 <pre>
 <p>
-def insert(ls, num):
+def InsertList(ls, num):
     n = len(ls)
     if n == 0:
        return ([num])
     if num >= ls[-1]:
        return (ls + [num])
     else:
-       return (insert(ls[:-1], num) + ls[-1:])
+       return (InsertList(ls[:-1], num) + ls[-1:])
  
  def sortList(ls):
      n = len(ls)
