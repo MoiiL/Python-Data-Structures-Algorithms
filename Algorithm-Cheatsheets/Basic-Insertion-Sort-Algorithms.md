@@ -2,6 +2,8 @@
 
 ## Time Complexity: O(n<sup>2</sup>)
 
+### Series: T(n) = 0 + 1 + ... + (n-1) || T(n) = n(n-1)/2
+
 #### Code: Inserting element in a sorted list
 <pre>
 <p>
