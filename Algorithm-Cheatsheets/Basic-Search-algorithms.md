@@ -13,7 +13,7 @@ def nativesearch(n,ls):
 </pre>
 
 ### Time Complexity: O(log n)
-#### Code: Binary Search using Recursion 
+#### Code: Binary Search in a Sorted List using Recursion 
 <pre>
 <p>
 def binarysearch(n,ls):
