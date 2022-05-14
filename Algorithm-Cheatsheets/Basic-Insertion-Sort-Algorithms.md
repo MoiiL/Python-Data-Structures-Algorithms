@@ -4,7 +4,11 @@
 
 ### Series: T(n) = 0 + 1 + ... + (n-1) || T(n) = n(n-1)/2
 
-#### Code: Inserting element in a sorted list
+<div>
+
+#### Inserting element in a sorted list
+
+##### Code:
 <pre>
 <p>
 def InsertionSort(ls):
@@ -21,7 +25,9 @@ def InsertionSort(ls):
 </pre>
 
 
-#### Code: Inserting element in a sorted list using recursion
+#### Inserting element in a sorted list using recursion
+
+##### Code:
 <pre>
 <p>
 def InsertList(ls, num):
@@ -42,3 +48,4 @@ def InsertList(ls, num):
 </p>
 </pre>
 
+</div>
