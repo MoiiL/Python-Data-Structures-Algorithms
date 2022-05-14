@@ -1,5 +1,9 @@
 # Merge Sort Algorithms
 
+### Series: T(n) = 2<sup>k</sup>T(n/2<sup>k</sup>) + kn
+
+### Time Complexity: O(nlogn)
+
 #### Using merge sort algorithms to sort a list
 
 ##### Code:
@@ -39,7 +43,6 @@ def MergeSort(A):
     l = MergeSort(A[:n//2])
     r = MergeSort(A[n//2:])
     B = merge(l,r)
-    return B
-         
+    return B         
 </p>
 </pre>
