@@ -33,11 +33,11 @@ def InsertList(ls, num):
     else:
        return (InsertList(ls[:-1], num) + ls[-1:])
  
- def sortList(ls):
+ def SortList(ls):
      n = len(ls)
      if n < 1:
          return(ls)
-     ls = insert(sortList(ls[:-1]), ls[-1])
+     ls = InsertList(SortList(ls[:-1]), ls[-1])
      return ls    
 </p>
 </pre>
