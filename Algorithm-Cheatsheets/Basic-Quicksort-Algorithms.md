@@ -1,9 +1,18 @@
 ## QuickSort Algorithms
 
 
-### Divide and Conquer Method
+### Divide and Conquer Method I
+
+<ul>
+    <li>Choose Pivot element(first/last/random element)</li>
+     <li>Store elements less that pivot in left subarray</li>
+     <li>Store elements greater than pivot in right subarray</li>
+     <li>Call quicksort recursively on left subarray</li>
+     <li>Call quicksort recursively on right sub array</li>
+</ul>
+
 ##### Series: T(n) = 2T(n/2)-n
-##### Time Complexity: O(nlogn)
+##### Time Complexity: Best/Average Case - O(nlogn)  | Worst Case - O(n<sup>2</sup>)
 <pre>
 <p>
 # Quicksort (C.A.R Hoare) method / Pivot method
@@ -26,3 +35,34 @@ def quicksort(L,l,r):
     return (L)       
 </p>
 </pre>
+
+
+### Quicksort method II
+
+<pre>
+<p>
+
+def quicksort(arr,left,right):
+   if left < right:
+       partition_position = partition(arr, left, right)
+       quicksort(arr,left,partition_position-1)
+       quicksort(arr,partition_position+1,right)
+       
+def partition(arr,left,right):
+    i = left
+    j = right - 1
+    pivot = arr[right]
+    while i < j:
+         while i < right and arr[i] < pivot:
+             i += 1
+         while j > left and arr[j] >= pivot:
+             j += 1
+         if i < j:
+            arr[i], arr[j] = arr[j], arr[i]
+    if arr[i] > pivot:
+         arr[i], arr[right] = arr[right], arr[i]
+    return i
+            
+</p>
+</pre>
+
