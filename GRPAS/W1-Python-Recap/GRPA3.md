@@ -1,4 +1,4 @@
-## Write a function named odd_one(L) that accepts a list L as argument and except for on element all other elements are of same datatype. The function shoudl return the odd element. 
+## Write a function named odd_one(L) that accepts a list L as argument and except for on element all other elements are of same datatype. The function should return the odd element. 
 ## Code
 
 <pre>
