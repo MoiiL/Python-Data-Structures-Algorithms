@@ -66,3 +66,27 @@ def partition(arr,left,right):
 </p>
 </pre>
 
+
+### Quicksort Method III
+<pre>
+<p>
+def partition(ls,l,r):
+    pivot, ptr = ls[r], l
+    for i in range(l, r):
+        if ls[i] <= pivot:
+            ls[i], ls[ptr] = ls[ptr], ls[i]
+            ptr += 1
+    ls[ptr], ls[r] = ls[r], ls[ptr]
+    return ptr
+ 
+def quicksort(ls,l,r):
+    if len(ls) == 1:  
+        return ls
+    if l < r:
+        pi = partition(ls,l,r)
+        quicksort(ls,l, pi-1)  
+        quicksort(ls,pi+1, r) 
+    return ls
+
+</p>
+</pre>
