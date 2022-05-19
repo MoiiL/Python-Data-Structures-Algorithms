@@ -19,6 +19,10 @@ def quicksort(L,l,r):
         else:
             L[i], L[lower] = L[lower], L[i]
             lower, upper = lower + 1, upper + 1
-       
+    L[l], L[lower-1] = L[lower-1], L[l]
+    lower -= 1
+    quicksort(L,l,lower)
+    quicksort(L,lower+1,upper)
+    return (L)       
 </p>
 </pre>
