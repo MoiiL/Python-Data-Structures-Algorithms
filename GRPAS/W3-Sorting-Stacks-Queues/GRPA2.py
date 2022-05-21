@@ -1,3 +1,4 @@
+#Function to check the operands +, -,*, ** and /
 def check_operand(s,n1,n2):
     temp = 0
     if s == '+':
@@ -12,7 +13,7 @@ def check_operand(s,n1,n2):
         temp = n2**n1
     return temp
 
-
+#Function to evaluate the expression
 def EvaluateExpression(ls):
     ls = ls.split()
     num , i = len(ls) , 0
