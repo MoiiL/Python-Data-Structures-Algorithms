@@ -81,3 +81,58 @@ def BFS(matrix, ele):
     return (visited)
 </p>
 </pre>
+
+
+#### Depth First Search (DFS)
+##### Technique: Stack
+###### Note:
+<ul>
+  <li> Overall time for adjacency matrix: O(n<sup>2</sup>)</li>
+  <li> Overall time for adjacency list: O(n+m)</li>
+  </ul>
+
+<pre>
+Code I
+<p>
+def DFSinitialise(mat):
+   (rows, cols) = mat.shape
+   (visited, parent) = ({}, {})
+   for i in range(rows):
+       visited[i] = False
+       parent[i] = -1
+   return (visited, parent)
+   
+def DFS(mat, visited, parent, ele):
+    visited[ele] = True
+    for k in neighbours(mat,v):
+       if (not visited[k]):
+          parent[k] = v
+          (visited, parent) = DFS(mat, visited, parent, k)
+    return (visited, parent)
+</p>
+</pre>
+
+<pre>
+Code II
+<p>
+(visited, parent) = ({}, {})
+
+def DFSinitialiseglobal(mat):
+    (rows, cols) = mat.shape
+    for i in range(rows):
+         visited[i] = False
+         parent[i] = -1
+    return
+    
+def DFSglobal(mat, v):
+    visited[v] = True
+    
+    for k in neighbours(mat, v):
+       if not visited[k]:
+           parent[k] = v
+           DFSglobal(mat, v)
+    return
+
+     
+</p>
+</pre>
