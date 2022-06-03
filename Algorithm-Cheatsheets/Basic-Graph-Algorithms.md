@@ -58,10 +58,8 @@ def BFSListPath(ls,ele):
 </p>
 </pre>
 
-#### Depth First Search (DFS)
-##### Technique: Queue
-
 <pre>
+Code III
 <p>
 def BFS(matrix, ele):
     (rows, cols) = matrix.shape
